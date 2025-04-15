@@ -1,0 +1,52 @@
+body {
+    box-sizing: border-box;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 2px;
+  }
+  
+  .cars-image {
+    width: 70%;
+    height: 80%;
+  }
+  
+  .cars-image img {
+    width: 100%;
+  }
+  
+  .car-props {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 1rem;
+  }
+  
+  .car-props > :nth-child(even) {
+    background-color: lightgray;
+  }
+  
+  .cars-name {
+    font-size: 4rem;
+    text-align: right;
+  }
+  
+  .cars-description {
+    font-size: 2rem;
+    text-align: justify;
+  }
+  
+  .configure {
+    margin-top: 50px;
+    padding: 10px;
+  }
+  
+  .configure button {
+    border-radius: 40px;
+    background-color: #88e62a;
+  }

@@ -123,19 +123,19 @@ body {
   transition: all 0.3s;
 }
 .navbar__buttons__sign-in:hover {
-  color: #ff4d30;
+  color: #016E35;
 }
 .navbar__buttons__register {
-  background-color: #ff4d30;
+  background-color: #016E35;
   color: white;
   padding: 1.5rem 3rem;
   border-radius: 3px;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  box-shadow: 0 10px 15px 0 rgba(1, 110, 53, 0.35);
   transition: all 0.3s;
 }
 .navbar__buttons__register:hover {
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.5);
-  background-color: #fa4226;
+  box-shadow: 0 10px 15px 0 rgba(1, 110, 53, 0.5);
+  background-color: #039344;
 }
 .navbar__buttons a {
   text-decoration: none;
@@ -663,6 +663,66 @@ body {
 .booking-modal__car-info__dates span h6 {
   font-size: 1.5rem;
   margin-bottom: 0.2rem;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  width: 80%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  border-radius: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
 }
 .booking-modal__car-info__dates span p {
   font-size: 1.6rem;
@@ -1921,7 +1981,7 @@ footer {
 }
 .models-div__box__descr__name-price__btn {
   background-color: #ff4d30;
-  padding: 1.8rem 3rem;
+  padding: 1.8rem 2rem;
   border-radius: 0.3rem;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
   transition: all 0.3s;
@@ -1938,6 +1998,28 @@ footer {
   color: white;
   font-weight: 700;
 }
+.models-div__box__descr__name-price__btn a {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.btn-book {
+  background-color: #ff4d30;
+}
+
+.btn-details {
+  background-color: #333;
+}
+
+.btn-book:hover,
+.btn-details:hover {
+  opacity: 0.85;
+}
+
 
 .team-container {
   display: grid;
