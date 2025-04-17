@@ -8,7 +8,7 @@ import Passat from "../images/cars-big/passatcc.jpg";
 export const CAR_DATA = [
   [
     {
-      name: "VW Golf 6",
+      name: "Proton Saga",
       price: "37",
       img: Golf6,
       model: "Golf 6",

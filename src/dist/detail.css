@@ -1,52 +1,213 @@
 body {
-    box-sizing: border-box;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-    padding: 2px;
-  }
-  
-  .cars-image {
-    width: 70%;
-    height: 80%;
-  }
-  
-  .cars-image img {
-    width: 100%;
-  }
-  
-  .car-props {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    font-size: 1rem;
-  }
-  
-  .car-props > :nth-child(even) {
-    background-color: lightgray;
-  }
-  
-  .cars-name {
-    font-size: 4rem;
-    text-align: right;
-  }
-  
-  .cars-description {
-    font-size: 2rem;
-    text-align: justify;
-  }
-  
-  .configure {
-    margin-top: 50px;
-    padding: 10px;
-  }
-  
-  .configure button {
-    border-radius: 40px;
-    background-color: #88e62a;
-  }
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-height: 80vh;
+  /* or any height you want */
+  overflow-y: auto;
+  padding-right: 10px;
+  /* for scrollbar space */
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff;
+  align-items: center;
+  margin-top: 20px;
+  padding: 2px;
+}
+
+.cars-image {
+  width: 70%;
+  height: 80%;
+}
+
+.cars-image img {
+  width: 100%;
+}
+
+.car-props {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.car-props> :nth-child(even) {
+  background-color: lightgray;
+}
+
+.cars-name {
+  font-size: 4rem;
+  text-align: right;
+}
+
+.cars-description {
+  font-size: 2.5rem;
+  text-align: justify;
+}
+
+.configure {
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.configure button {
+  border-radius: 40px;
+  background-color: #88e62a;
+}
+
+.car-table {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.car-table-item {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* Remove outer borders */
+.car-table-item:nth-child(-n+3) {
+  border-top: none;
+  /* First row */
+}
+
+.car-table-item:nth-child(3n + 1) {
+  border-left: none;
+  /* First column */
+}
+
+.car-table-item:nth-child(3n) {
+  border-right: none;
+  /* First column */
+}
+
+/* ✅ Remove bottom border for the last row */
+.car-table-item:nth-child(n+4) {
+  border-bottom: none;
+}
+
+.car-table-item .title {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.car-table-item .desc {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.equipment-section h2 {
+  text-align: left;
+  margin-top: 30px;
+  font-size: 24px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  width: 80rem;
+}
+
+.equipment-section-details {
+  text-align: left;
+  margin-top: 30px;
+  font-size: 16px;
+  padding-bottom: 5px;
+  width: 80rem;
+}
+
+.equipment-list {
+  width: 80rem;
+  display: grid;
+  justify-content: start;
+  grid-template-columns: 25rem 20rem;
+  gap: 0px 20px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.equipment-item {            /* Text color */
+  font-size: 16px;         /* Text size */
+  position: relative;
+  padding-left: 20px;      /* Space for bullet */
+  margin-bottom: 5px;
+}
+.equipment-item::before {
+  content: '•';          /* Bullet symbol */
+  position: absolute;
+  left: 0;
+  color: green;            /* Bullet color */
+  font-size: 25px;         /* Bullet size */
+  line-height: 1;
+}
+
+.action-buttons {
+  width: 80rem;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  width: 20rem;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+
+.action-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.action-header {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.action-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.action-section {
+  font-size: 14px;
+}
+.action-buttons-panel {
+  width: 80rem;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.action-btn-panel {
+  width: 20rem;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+.action-btn-panel.selected {
+  background-color: #016E35;
+  color: white;
+}

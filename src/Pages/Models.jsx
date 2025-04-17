@@ -11,12 +11,16 @@ import CarImg6 from "../images/cars-big/passat-box.png";
 
 function Models() {
   const carList = [
-    { image: CarImg1, name: "Audi A1", brand: "Audi", price: "RM 45" },
-    { image: CarImg2, name: "Golf 6", brand: "VW", price: "RM 37" },
-    { image: CarImg3, name: "Toyota", brand: "Camry", price: "RM 30" },
-    { image: CarImg4, name: "BMW 320", brand: "ModernLine", price: "RM 35" },
-    { image: CarImg5, name: "Mercedes", brand: "Benz GLK", price: "RM 50" },
-    { image: CarImg6, name: "Passat", brand: "VW", price: "RM 28" },
+    { image: CarImg1, name: "Bezza", brand: "Perodua", price: "RM 45", transmission: "Automatic", fuelType: "Petrol"},
+    { image: CarImg2, name: "City", brand: "Honda", price: "RM 37" , transmission: "Automatic", fuelType: "Petrol"},
+    { image: CarImg3, name: "Civic", brand: "Honda", price: "RM 30" , transmission: "Automatic", fuelType: "Petrol"},
+    { image: CarImg4, name: "Vios", brand: "Toyota", price: "RM 35", transmission: "Automatic", fuelType: "Petrol"},
+    { image: CarImg5, name: "Perdana", brand: "Proton", price: "RM 50" , transmission: "Automatic" , fuelType: "Petrol"},
+    { image: CarImg6, name: "Saga", brand: "Proton", price: "RM 28" , transmission: "Automatic" , fuelType: "Petrol"},
+    { image: CarImg6, name: "Camry", brand: "Toyota", price: "RM 28" , transmission: "Automatic" , fuelType: "Petrol"},
+    { image: CarImg6, name: "Mazda 2", brand: "Mazda", price: "RM 28", transmission: "Automatic" , fuelType: "Petrol"},
+    { image: CarImg6, name: "HRV", brand: "Honda", price: "RM 28" , transmission: "Automatic", fuelType: "Petrol"},
+    { image: CarImg6, name: "CR-V", brand: "Honda", price: "RM 28" , transmission: "Automatic" , fuelType: "Petrol"},
   ];
 
   return (

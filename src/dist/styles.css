@@ -24,7 +24,7 @@ body {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #ff4d30 #ffffff;
+  scrollbar-color: #016E35 #ffffff;
 }
 
 /* Chrome, Edge and Safari */
@@ -48,15 +48,15 @@ body {
 
 *::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background-color: #ff4d30;
+  background-color: #016E35;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #ff4d30;
+  background-color: #016E35;
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: #ff2525;
+  background-color: #016E35;
 }
 
 .navbar {
@@ -262,7 +262,7 @@ body {
   margin-bottom: 2.3rem;
 }
 .hero-content__text h1 span {
-  color: #1D3A6E;
+  color: #016E35;
 }
 .hero-content__text p {
   font-size: 1.6rem;
@@ -288,12 +288,12 @@ body {
   font-weight: 700;
 }
 .hero-content__text__btns__book-ride {
-  background-color: #1D3A6E;
+  background-color: #016E35;
   padding: 1.8rem 3rem;
   border-radius: 0.3rem;
   box-shadow: 0 10px 15px 0 rgba(29, 58, 110, 0.35);
   transition: all 0.3s;
-  border: 2px solid #1D3A6E;
+  border: 2px solid #016E35;
 }
 @media (max-width: 450px) {
   .hero-content__text__btns__book-ride {
@@ -302,7 +302,7 @@ body {
 }
 .hero-content__text__btns__book-ride:hover {
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
-  background-color: #fa4226;
+  background-color: #016E35;
 }
 .hero-content__text__btns__learn-more {
   background-color: #010103;
@@ -350,7 +350,7 @@ body {
   position: fixed;
   font-size: 2.5rem;
   color: white;
-  background-color: #ff4d30;
+  background-color: #016E35;
   border: 3px solid white;
   width: 2rem;
   height: 2rem;
@@ -413,7 +413,7 @@ body {
   gap: 2rem;
 }
 .book-content__box .box-form b {
-  color: #ff4d30;
+  color: #016E35;
 }
 @media (max-width: 1000px) {
   .book-content__box .box-form {
@@ -435,7 +435,7 @@ body {
   margin-bottom: 1.2rem;
 }
 .book-content__box .box-form__car-type label i {
-  color: #ff4d30;
+  color: #016E35;
 }
 .book-content__box .box-form__car-type select {
   font-size: 1.5rem;
@@ -464,7 +464,7 @@ body {
   margin-bottom: 1.2rem;
 }
 .book-content__box .box-form__car-time label i {
-  color: #ff4d30;
+  color: #016E35;
 }
 .book-content__box .box-form__car-time ::-webkit-datetime-edit {
   padding: 1.3rem 1.3rem;
@@ -483,18 +483,18 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
   color: white;
-  background-color: #ff4d30;
-  box-shadow: 0 10px 15px rgba(255, 83, 48, 0.35);
+  background-color: #016E35;
+  box-shadow: 0 10px 15px rgba(1, 110, 53, 0.35);
   cursor: pointer;
   transition: all 0.3s;
 }
 .book-content__box button:hover {
-  box-shadow: 0 10px 15px rgba(255, 83, 48, 0.55);
+  box-shadow: 0 10px 15px rgba(1, 110, 53, 0.55);
 }
 
 .error-message {
-  color: #721c24;
-  background-color: #f8d7da;
+  color: #016E35;
+  background-color: #C1F4D7;
   border-color: #f5c6cb;
   padding: 1rem 1.4rem;
   margin-bottom: 1.8rem;
@@ -981,7 +981,7 @@ body {
   text-align: left;
 }
 .pick-box button:hover {
-  background-color: #ff4d30;
+  background-color: #016E35;
   color: white;
 }
 
@@ -1004,7 +1004,7 @@ body {
 }
 .pick-description__price {
   width: 100%;
-  background-color: #ff4d30;
+  background-color: #016E35;
   font-size: 1.8rem;
   display: flex;
   align-items: center;
@@ -1044,7 +1044,7 @@ body {
   font-weight: 600;
   color: white;
   font-family: "Poppins", sans-serif;
-  background-color: #ff4d30;
+  background-color: #016E35;
   padding: 1rem 1rem;
   display: flex;
   width: 100%;
@@ -1054,7 +1054,7 @@ body {
   box-shadow: 6px 6px 0 #efe9e9;
 }
 .cta-btn:hover {
-  background-color: #e9381d;
+  background-color: #016E35;
 }
 
 .box-cars {
@@ -1077,7 +1077,7 @@ body {
 }
 
 .colored-button {
-  background-color: #ff4d30 !important;
+  background-color: #016E35 !important;
   color: white;
 }
 
@@ -1145,7 +1145,7 @@ body {
   }
 }
 .banner-content__text span {
-  color: #ff4d30;
+  color: #016E35;
   font-weight: 500;
 }
 
@@ -1222,19 +1222,19 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  background-color: #ff4d30;
+  background-color: #016E35;
   padding: 1.5rem 2.5rem;
   border-radius: 0.3rem;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  box-shadow: 0 10px 15px 0 rgba(1, 110, 53, 0.35);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid #016E35;
   font-size: 1.6rem;
   width: -moz-fit-content;
   width: fit-content;
 }
 .text-container__left a:hover {
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
-  background-color: #fa4226;
+  box-shadow: 0 10px 15px 0 rgba(1, 110, 53, 0.6);
+  background-color: #016E35;
 }
 .text-container__right {
   display: flex;
@@ -1474,9 +1474,9 @@ body {
 }
 
 .active-question {
-  background-color: #ff4d30;
+  background-color: #016E35;
   color: white;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  box-shadow: 0 10px 15px 0 rgba(1, 110, 53, 0.35);
 }
 
 .download-section {
@@ -1582,7 +1582,7 @@ footer {
   transition: all 0.2s;
 }
 .footer-content__1 li a:hover {
-  color: #ff4d30;
+  color: #016E35;
 }
 .footer-content__1 li:nth-child(1) {
   font-size: 2.4rem;
@@ -1617,7 +1617,7 @@ footer {
   transition: all 0.2s;
 }
 .footer-content__2 a:hover {
-  color: #ff4d30;
+  color: #016E35;
 }
 .footer-content__2 li {
   font-size: 1.6rem;
@@ -1652,12 +1652,12 @@ footer {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  background-color: #ff4d30;
+  background-color: #016E35;
   padding: 1.5rem 2.5rem;
   border-radius: 0.3rem;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.25);
+  box-shadow: 0 10px 15px 0 rgba(1, 110, 53, 0.25);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid #016E35;
   font-size: 1.6rem;
   width: -moz-fit-content;
   width: fit-content;
@@ -1665,8 +1665,8 @@ footer {
   width: 100%;
 }
 .submit-email:hover {
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.4);
-  background-color: #fa4226;
+  box-shadow: 0 10px 15px 0 rgba(1, 110, 53, 0.4);
+  background-color: #016E35;
 }
 
 .hero-pages {
@@ -1710,7 +1710,7 @@ footer {
   transition: all 0.2s;
 }
 .hero-pages__text p a:hover {
-  color: #ff4d30;
+  color: #016E35;
 }
 
 .about-main {
@@ -1868,7 +1868,7 @@ footer {
   font-size: 2.7rem;
   gap: 1rem;
   align-items: center;
-  color: #ff4d30;
+  color: #016E35;
   white-space: nowrap;
 }
 
@@ -1945,7 +1945,7 @@ footer {
   gap: 0.4rem;
 }
 .models-div__box__descr__name-price__name span i {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #ffc933;
 }
 .models-div__box__descr__name-price__price {
@@ -1979,19 +1979,27 @@ footer {
 .models-div__box__descr__name-price__details span i {
   color: #010103;
 }
+.model-content{
+  display:flex;
+  justify-content: space-evenly;
+}
 .models-div__box__descr__name-price__btn {
-  background-color: #ff4d30;
+  background-color: #016E35;
+  width: 120px;
+  height: 6rem;
   padding: 1.8rem 2rem;
   border-radius: 0.3rem;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  box-shadow: 0 10px 15px 0 rgba(1, 110, 53, 0.35);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid #016E35;
   font-size: 1.8rem;
   cursor: pointer;
+  align-items: center;
 }
 .models-div__box__descr__name-price__btn:hover {
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
-  background-color: #fa4226;
+  width: 120;
+  box-shadow: 0 10px 15px 0 rgba(1, 110, 53, 0.6);
+  background-color: #016E35;
 }
 .models-div__box__descr__name-price__btn a {
   text-decoration: none;
@@ -2000,7 +2008,6 @@ footer {
 }
 .models-div__box__descr__name-price__btn a {
   text-decoration: none;
-  padding: 10px 15px;
   border-radius: 5px;
   font-weight: bold;
   color: white;
@@ -2008,7 +2015,9 @@ footer {
 }
 
 .btn-book {
-  background-color: #ff4d30;
+  width: 120px;
+  align-items: center;
+  background-color: #016E35;
 }
 
 .btn-details {
@@ -2128,7 +2137,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 .contact-div__text a:hover {
-  color: #ff4d30;
+  color: #016E35;
 }
 .contact-div__form {
   display: flex;

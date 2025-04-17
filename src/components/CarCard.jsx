@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import CarDetails from '../components/CarDetails';
 
-function CarCard({ image, name, brand, price }) {
+function CarCard({ image, name, brand, price, transmission, fuelType }) {
     const [showDetails, setShowDetails] = useState(false);
-    
+
 
     const handleDetailsClick = () => {
         setShowDetails(true);
@@ -17,15 +17,17 @@ function CarCard({ image, name, brand, price }) {
     const carInfo = {
         id: Math.floor(Math.random() * 1000), // You can replace this with real ID if available
         name,
-        description: 'A stylish and high-performance car that meets all your travel needs.',
-        cost: price,
-        make: brand,
-        car_type: 'Manual',
-        speed: '220 km/h',
-        color: 'Black',
+        description: 'Damansara, Kuala Lumpur',
+        cost: "1,499 cc",
+        make: "Sedan",
+        car_type: 'Petrol',
+        speed: '2012',
+        color: '5',
         images: {
             img1: image,
         },
+        transmission: transmission,
+        fuel: fuelType
     };
 
     return (
@@ -50,30 +52,36 @@ function CarCard({ image, name, brand, price }) {
                     <div className="models-div__box__descr__name-price__details">
                         <span><i className="fa-solid fa-car-side"></i> &nbsp; {brand}</span>
                         <span style={{ textAlign: "right" }}>4/5 &nbsp; <i className="fa-solid fa-car-side"></i></span>
-                        <span><i className="fa-solid fa-car-side"></i> &nbsp; Manual</span>
-                        <span style={{ textAlign: "right" }}>Diesel &nbsp; <i className="fa-solid fa-car-side"></i></span>
+                        <span><i className="fa-solid fa-car-side"></i> &nbsp; {transmission}</span>
+                        <span style={{ textAlign: "right" }}>{fuelType} &nbsp; <i className="fa-solid fa-car-side"></i></span>
                     </div>
-                    <div className="models-div__box__descr__name-price__btn" style={{ display: 'flex', gap: '10px' }}>
-                        <Link onClick={() => window.scrollTo(0, 0)} to="/" className="btn-book">
-                            Book Ride
-                        </Link>
-                        <button onClick={handleDetailsClick} className="book">
-                            Details
-                        </button>
-          
+                    <div className="model-content">
+                        <div className="models-div__box__descr__name-price__btn" style={{ display: 'flex', gap: '10px' }}>
+                            <Link onClick={() => window.scrollTo(0, 0)} to="/" className="btn-book">
+                                Book Ride
+                            </Link>
+
+                        </div>
+                        <div className="models-div__box__descr__name-price__btn" style={{ display: 'flex', gap: '10px' }}>
+                            <Link onClick={handleDetailsClick} className="btn-book">
+                                Details
+                            </Link>
+
+                        </div>
                     </div>
+
                     {showDetails && (
-                <div className="popup-overlay">
-                    <div className="popup-content">
-                        <button onClick={closePopup} className="close-popup">X</button>
-                        <CarDetails carDetails={carInfo} />
-                    </div>
-                </div>
-            )}
+                        <div className="popup-overlay">
+                            <div className="popup-content">
+                                <button onClick={closePopup} className="close-popup">X</button>
+                                <CarDetails carDetails={carInfo} />
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
-        
+
     );
 }
 
