@@ -9,6 +9,7 @@ import TestimonialsPage from "./Pages/TestimonialsPage";
 import Team from "./Pages/Team";
 import Contact from "./Pages/Contact";
 import Sidebar from "./components/Sidebar";
+import CarDetails from './components/CarDetails';
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -29,6 +30,8 @@ function App() {
             <Route path="testimonials" element={<TestimonialsPage />} />
             <Route path="team" element={<Team />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="/car-details" element={<CarDetails />} />
           </Routes>
         </div>
       </div>

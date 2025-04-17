@@ -67,7 +67,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2.7rem 2rem;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -142,61 +142,38 @@ body {
 }
 
 .mobile-hamb {
-  font-size: 2.8rem;
-  display: none;
+  display: block;
+  font-size: 24px;
   cursor: pointer;
-  transition: all 0.3s;
-}
-.mobile-hamb:hover {
-  color: #ff4d30;
-}
-@media (max-width: 1000px) {
-  .mobile-hamb {
-    display: flex;
-  }
 }
 
 .mobile-navbar {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100vh;
   position: fixed;
   top: 0;
-  left: -100%;
-  background-color: #ffffff;
-  z-index: 999999;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s ease-in-out;
+  right: 0;
+  background: white;
+  width: 250px;
+  height: 100vh;
+  z-index: 1000;
+  padding: 2rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
 }
+
+.mobile-navbar.open-nav {
+  transform: translateX(0);
+}
+
 .mobile-navbar__close {
-  font-size: 3rem;
-  position: absolute;
-  top: 3.5rem;
-  right: 3.5rem;
+  align-self: flex-end;
+  font-size: 24px;
   cursor: pointer;
-  transition: all 0.3s;
 }
-.mobile-navbar__close:hover {
-  color: #ff4d30;
-}
-.mobile-navbar__links {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  font-size: 2.3rem;
-  gap: 3rem;
-  text-align: center;
-}
-.mobile-navbar__links li a {
-  text-decoration: none;
-  color: #010103;
-  font-weight: 500;
-  transition: all 0.3s;
-}
-.mobile-navbar__links li a:hover {
-  color: #ff4d30;
+
+.mobile-navbar__links li {
+  margin: 1rem 0;
 }
 
 .open-nav {
@@ -579,7 +556,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  background-color: #ff4d30;
+  background-color: #016E35;
   color: white;
   align-items: center;
 }
@@ -601,12 +578,12 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   padding: 2rem 3rem;
-  background-color: #ffeae6;
+  background-color: rgba(1,110,53,0.2)
 }
 .booking-modal__message h4 {
   font-size: 1.9rem;
   font-weight: 700;
-  color: #ff4d30;
+  color: #016E35;
 }
 .booking-modal__message h4 i {
   font-size: 2.5rem;
@@ -637,7 +614,7 @@ body {
 }
 .booking-modal__car-info__dates h5 {
   font-size: 1.8rem;
-  color: #ff4d30;
+  color: #016E35;
 }
 .booking-modal__car-info__dates span {
   display: flex;
@@ -691,7 +668,7 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   background: none;
   border: none;
   cursor: pointer;
@@ -740,7 +717,7 @@ body {
 }
 .booking-modal__car-info__model h5 {
   font-size: 1.8rem;
-  color: #ff4d30;
+  color: #016E35;
 }
 .booking-modal__car-info__model h5 span {
   color: #010103;
@@ -758,7 +735,7 @@ body {
 .booking-modal__person-info h4 {
   font-size: 1.8rem;
   text-transform: uppercase;
-  color: #ff4d30;
+  color: #016E35;
   margin-bottom: 2rem;
 }
 
@@ -838,14 +815,14 @@ body {
   font-size: 2.4rem;
   color: white;
   font-weight: 700;
-  background-color: #ff4d30;
-  border: 1px solid yellow;
+  background-color: #016E35;
+  border: 1px #016E35;
   padding: 1.2rem 2rem;
   cursor: pointer;
   transition: all 0.2s;
 }
 .reserve-button button:hover {
-  background-color: #fe3516;
+  background-color: #016E35;
 }
 
 .dates-div {
@@ -2015,7 +1992,7 @@ footer {
 }
 
 .btn-book {
-  width: 120px;
+  width: 220px;
   align-items: center;
   background-color: #016E35;
 }
@@ -2027,6 +2004,22 @@ footer {
 .btn-book:hover,
 .btn-details:hover {
   opacity: 0.85;
+}
+.detail-content
+{
+  background-color: #016E35;
+  width: 120px;
+  height: 6rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 10px 15px 0 rgba(1, 110, 53, 0.35);
+  transition: all 0.3s;
+  border: 2px solid #016E35;
+  font-size: 1.8rem;
+  cursor: pointer;
+  align-items: center;
+  color: #efe9e9;
+  font-weight: 650;
+  font-family: "Poppins", sans-serif;
 }
 
 
@@ -2227,6 +2220,7 @@ footer {
 
 .app-layout {
   display: flex;
+  flex-direction: column;
 }
 
 .main-content {
@@ -2235,4 +2229,38 @@ footer {
   flex: 1;
   background-color: #f4f4f4;
   min-height: 100vh;
+}
+
+.details-table {
+  width: 85%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.details-table th {
+  font-size: 20px;
+  border: 2px solid #ccc;
+  text-align: center;
+  background-color: #016E35;
+  color: #ececec;
+}
+.details-table td {
+  font-size: 20px;
+  border: 2px solid #ccc;
+  text-align: left;
+}
+
+.details-table th:nth-child(1){
+  padding: 10px 20px 10px;
+  width: 30%; /* adjust as needed */
+}
+.details-table td:nth-child(1) {
+  padding: 0px 20px;
+  width: 30%; /* adjust as needed */
+}
+
+.details-table th:nth-child(2),
+.details-table td:nth-child(2) {
+  padding: 0px 20px;
+  width: 70%; /* adjust as needed */
 }

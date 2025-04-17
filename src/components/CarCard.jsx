@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import CarDetails from '../components/CarDetails';
+import { useNavigate } from 'react-router-dom';
 
 function CarCard({ image, name, brand, price, transmission, fuelType }) {
     const [showDetails, setShowDetails] = useState(false);
@@ -13,6 +14,9 @@ function CarCard({ image, name, brand, price, transmission, fuelType }) {
     const closePopup = () => {
         setShowDetails(false);
     };
+
+
+
 
     const carInfo = {
         id: Math.floor(Math.random() * 1000), // You can replace this with real ID if available
@@ -28,6 +32,12 @@ function CarCard({ image, name, brand, price, transmission, fuelType }) {
         },
         transmission: transmission,
         fuel: fuelType
+    };
+
+    const navigate = useNavigate();
+
+    const handleViewDetails = () => {
+        navigate('/car-details', { state: { carDetails: carInfo } });
     };
 
     return (
@@ -63,21 +73,18 @@ function CarCard({ image, name, brand, price, transmission, fuelType }) {
 
                         </div>
                         <div className="models-div__box__descr__name-price__btn" style={{ display: 'flex', gap: '10px' }}>
-                            <Link onClick={handleDetailsClick} className="btn-book">
+                            <button
+                                onClick={() => {
+                                    window.scrollTo(0, 0);
+                                    handleViewDetails();
+                                }}
+                                className="detail-content"
+                            >
                                 Details
-                            </Link>
+                            </button>
 
                         </div>
                     </div>
-
-                    {showDetails && (
-                        <div className="popup-overlay">
-                            <div className="popup-content">
-                                <button onClick={closePopup} className="close-popup">X</button>
-                                <CarDetails carDetails={carInfo} />
-                            </div>
-                        </div>
-                    )}
                 </div>
             </div>
         </div>

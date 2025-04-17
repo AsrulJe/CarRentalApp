@@ -1,7 +1,3 @@
-body {
-  box-sizing: border-box;
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -45,7 +41,6 @@ body {
 }
 
 .cars-description {
-  font-size: 2.5rem;
   text-align: justify;
 }
 
@@ -103,14 +98,6 @@ body {
   margin-bottom: 4px;
 }
 
-.equipment-section h2 {
-  text-align: left;
-  margin-top: 30px;
-  font-size: 24px;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
-  width: 80rem;
-}
 
 .equipment-section-details {
   text-align: left;
@@ -123,8 +110,8 @@ body {
 .equipment-list {
   width: 80rem;
   display: grid;
-  justify-content: start;
-  grid-template-columns: 25rem 20rem;
+  justify-content: left;
+  grid-template-columns: 30rem 30rem;
   gap: 0px 20px;
   margin-top: 15px;
   text-align: left;
@@ -172,7 +159,7 @@ body {
 
 .action-header {
   text-align: center;
-  font-size: 24px;
+  font-size: 30px;
   padding-bottom: 5px;
   border-bottom: 2px solid #ccc;
   margin-bottom: 10px;
@@ -180,12 +167,12 @@ body {
 
 .action-title {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 5px;
 }
 
 .action-section {
-  font-size: 14px;
+  font-size: 24px;
 }
 .action-buttons-panel {
   width: 80rem;
@@ -197,17 +184,114 @@ body {
   flex-wrap: wrap;
 }
 
-.action-btn-panel {
-  width: 20rem;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.car-details-page {
+  display: flex;
+  flex-direction: column;
+  align-items: start;      /* Align all content inside to center */
+  justify-content: start;
+  text-align: start;       /* Center text where applicable */
+  max-width: 1200px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 2rem;
+}
+
+.car-details-header h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 70px;
+  margin-bottom: 1rem;
+}
+
+.car-details-image-section {
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+.car-details-image-section img {
+  min-width: 40%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 200px;
+}
+
+.car-specs-section{
+  font-size: 24px;
+  margin-top: 2rem;
+  width: 1000px;
+}
+ .equipment-section, .subscription-section, .mileage-section, .inspection-section {
+  font-size: 24px;
+  margin-top: 2rem;
+}
+
+.details-table {
+  width: 100%; /* Makes the table take the full width of its container */
+  max-width: 1200px; /* You can set a max-width to constrain the table's size */
+  margin: 0 auto; /* Centers the table within its parent container */
+  border-collapse: collapse; /* Ensures borders collapse for a cleaner look */
+}
+
+.details-table th, .details-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
   text-align: left;
 }
-.action-btn-panel.selected {
-  background-color: #016E35;
+
+.action-buttons-panel,
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   /* Center items horizontally */
+  align-items: center;       /* Center items vertically (if needed) */
+  gap: 5rem;
+  margin-top: 1rem;
+  width: 100%;               /* Optional: make it take full width */
+}
+
+.action-btn-panel, .action-btn {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  flex: 1;
+  max-width: 400px;
+  min-height: 180px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 50px;
+}
+.rm {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+}
+
+.price {
+  margin-top: 5px;
+  font-size: 40px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+}
+
+.selected {
+  background-color: #016E35; /* Or your desired background color */
+  color: white; /* Text color for all text within the selected button */
+}
+
+/* Make sure to change the color of the RM value text to green if not selected */
+.action-btn-panel .action-title {
+  color: green; /* RM color when not selected */
+}
+
+/* Change the color to white when the button is selected */
+.selected .action-title {
   color: white;
 }

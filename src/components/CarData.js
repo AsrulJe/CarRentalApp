@@ -1,5 +1,5 @@
-import Golf6 from "../images/cars-big/golf6.jpg";
-import AudiA1 from "../images/cars-big/audia1.jpg";
+import Persona from "../images/cars-big/persona.png";
+import Saga from "../images/cars-big/saga.png";
 import Toyota from "../images/cars-big/toyotacamry.jpg";
 import Bmw320 from "../images/cars-big/bmw320.jpg";
 import Benz from "../images/cars-big/benz.jpg";
@@ -8,11 +8,11 @@ import Passat from "../images/cars-big/passatcc.jpg";
 export const CAR_DATA = [
   [
     {
-      name: "Proton Saga",
+      name: "Proton Persona",
       price: "37",
-      img: Golf6,
-      model: "Golf 6",
-      mark: "Volkswagen",
+      img: Persona,
+      model: "Persona",
+      mark: "Proton",
       year: "2008",
       doors: "4/5",
       air: "Yes",
@@ -22,11 +22,11 @@ export const CAR_DATA = [
   ],
   [
     {
-      name: "Audi A1 S-Line",
+      name: "Proton Saga",
       price: "45",
-      img: AudiA1,
-      model: "Audi",
-      mark: "A1",
+      img: Saga,
+      model: "Saga",
+      mark: "Proton",
       year: "2012",
       doors: "4/5",
       air: "Yes",
