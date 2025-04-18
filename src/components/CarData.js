@@ -1,9 +1,9 @@
 import Persona from "../images/cars-big/persona.png";
 import Saga from "../images/cars-big/saga.png";
 import Toyota from "../images/cars-big/toyotacamry.jpg";
-import Bmw320 from "../images/cars-big/bmw320.jpg";
-import Benz from "../images/cars-big/benz.jpg";
-import Passat from "../images/cars-big/passatcc.jpg";
+import Bezza from "../images/cars-big/bezza.png";
+import HRV from "../images/cars-big/hrv.png";
+import Vios from "../images/cars-big/vios.png";
 
 export const CAR_DATA = [
   [
@@ -50,11 +50,11 @@ export const CAR_DATA = [
   ],
   [
     {
-      name: "BMW 320 ModernLine",
+      name: "Perodua Bezza",
       price: "35",
-      img: Bmw320,
+      img: Bezza,
       model: "320",
-      mark: "BMW",
+      mark: "Perodua",
       year: "2012",
       doors: "4/5",
       air: "Yes",
@@ -64,11 +64,11 @@ export const CAR_DATA = [
   ],
   [
     {
-      name: "Mercedes-Benz GLK",
+      name: "Honda HRV",
       price: "50",
-      img: Benz,
-      model: "Benz GLK",
-      mark: "Mercedes",
+      img: HRV,
+      model: "HRV",
+      mark: "Honda",
       year: "2006",
       doors: "4/5",
       air: "Yes",
@@ -78,11 +78,11 @@ export const CAR_DATA = [
   ],
   [
     {
-      name: "VW Passat CC",
+      name: "Toyota Vios",
       price: "25",
-      img: Passat,
+      img: Vios,
       model: "Passat CC",
-      mark: "Volkswagen",
+      mark: "Toyota",
       year: "2008",
       doors: "4/5",
       air: "Yes",
