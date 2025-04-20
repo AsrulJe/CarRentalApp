@@ -35,7 +35,7 @@ function Footer() {
                   rel="noreferrer"
                   href="https://devrahuls.vercel.app/"
                 >
-                  Design with ❤️ by Asrul Azmir
+                  {/* Design with ❤️ by Asrul Azmir */}
                 </a>
               </li>
             </ul>
@@ -61,8 +61,8 @@ function Footer() {
 
             <ul className="footer-content__2">
               <li>Working Hours</li>
-              <li>Mon - Fri: 9:00AM - 9:00PM</li>
-              <li>Sat: 9:00AM - 19:00PM</li>
+              <li>Mon - Fri: 9:00AM - 6:00PM</li>
+              <li>Sat: 9:00AM - 2:00PM</li>
               <li>Sun: Closed</li>
             </ul>
 

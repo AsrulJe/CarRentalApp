@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import CarAudi from "../images/cars-big/audia1.jpg";
-import CarGolf from "../images/cars-big/golf6.jpg";
-import CarToyota from "../images/cars-big/toyotacamry.jpg";
-import CarBmw from "../images/cars-big/bmw320.jpg";
-import CarMercedes from "../images/cars-big/benz.jpg";
-import CarPassat from "../images/cars-big/passatcc.jpg";
+import CarBezza from "../images/cars-big/bezza.png";
+import CarPersona from "../images/cars-big/persona.png";
+import CarCamry from "../images/cars-big/camry.png";
+import CarVios from "../images/cars-big/vios.png";
+import CarHrv from "../images/cars-big/hrv.png";
 
 function BookCar() {
   const [modal, setModal] = useState(false); //  class - active-modal
@@ -122,23 +121,20 @@ function BookCar() {
   // based on value name show car img
   let imgUrl;
   switch (carImg) {
-    case "Audi A1 S-Line":
-      imgUrl = CarAudi;
+    case "Perodua Bezza":
+      imgUrl = CarBezza;
       break;
-    case "VW Golf 6":
-      imgUrl = CarGolf;
+    case "Proton Persona":
+      imgUrl = CarPersona;
       break;
     case "Toyota Camry":
-      imgUrl = CarToyota;
+      imgUrl = CarCamry;
       break;
-    case "BMW 320 ModernLine":
-      imgUrl = CarBmw;
+    case "Toyota Vios":
+      imgUrl = CarVios;
       break;
-    case "Mercedes-Benz GLK":
-      imgUrl = CarMercedes;
-      break;
-    case "VW Passat CC":
-      imgUrl = CarPassat;
+    case "Honda HRV":
+      imgUrl = CarHrv;
       break;
     default:
       imgUrl = "";
@@ -181,14 +177,13 @@ function BookCar() {
                   </label>
                   <select value={carType} onChange={handleCar}>
                     <option>Select your car type</option>
-                    <option value="Audi A1 S-Line">Audi A1 S-Line</option>
-                    <option value="VW Golf 6">VW Golf 6</option>
+                    <option value="Perodua Bezza">Perodua Bezza</option>
+                    <option value="Proton Persona">Proton Persona</option>
                     <option value="Toyota Camry">Toyota Camry</option>
-                    <option value="BMW 320 ModernLine">
-                      BMW 320 ModernLine
+                    <option value="Toyota Vios">
+                      Toyota Vios
                     </option>
-                    <option value="Mercedes-Benz GLK">Mercedes-Benz GLK</option>
-                    <option value="VW Passat CC">VW Passat CC</option>
+                    <option value="Honda HRV">Honda HRV</option>
                   </select>
                 </div>
 
@@ -273,6 +268,9 @@ function BookCar() {
             <i className="fa-solid fa-circle-info"></i> Upon completing this
             reservation enquiry, you will receive:
           </h4>
+          <p>
+            Confirmation email regarding your reservation and details of pricing.
+          </p>
           <p>
             Your rental voucher to produce on arrival at the rental desk and a
             toll-free customer support number.

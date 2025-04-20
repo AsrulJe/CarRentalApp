@@ -56,7 +56,7 @@ function CarCard({ image, name, brand, price, transmission, fuelType }) {
                         </div>
                         <div className="models-div__box__descr__name-price__price">
                             <h4>{price}</h4>
-                            <p>per day</p>
+                            <p>per month</p>
                         </div>
                     </div>
                     <div className="models-div__box__descr__name-price__details">
